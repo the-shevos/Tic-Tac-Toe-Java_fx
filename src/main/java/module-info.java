@@ -3,6 +3,6 @@ module lk.ijse.gdse.tictactoegame {
     requires javafx.fxml;
 
 
-    opens lk.ijse.gdse.tictactoegame to javafx.fxml;
-    exports lk.ijse.gdse.tictactoegame;
+    opens tic.tac.toe.game to javafx.fxml;
+    exports tic.tac.toe.game;
 }
