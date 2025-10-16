@@ -28,7 +28,7 @@ public class TicTacToeController {
 
     public void start(Stage stage) {
         StackPane root = new StackPane();
-        root.setBackground(new Background(new BackgroundFill(Color.web("#f5f6f7"), CornerRadii.EMPTY, Insets.EMPTY)));
+        root.setBackground(new Background(new BackgroundFill(Color.web("#e8e8ed"), CornerRadii.EMPTY, Insets.EMPTY)));
 
         animationLayer = new Pane();
         animationLayer.setMouseTransparent(true);
@@ -114,12 +114,12 @@ public class TicTacToeController {
     }
 
     private String baseButtonStyle() {
-        return "-fx-background-color: white; -fx-border-color: #d0d0d0; -fx-border-width: 2;"
+        return "-fx-background-color: white; -fx-border-color: #0c0c0d; -fx-border-width: 2;"
                 + "-fx-background-radius: 10; -fx-border-radius: 10; -fx-cursor: hand;";
     }
 
     private String hoverButtonStyle() {
-        return "-fx-background-color: #f1f3ff; -fx-border-color: #bfc0ff; -fx-border-width: 2;"
+        return "-fx-background-color: #b4b4b8; -fx-border-color: #0c0c0d; -fx-border-width: 2;"
                 + "-fx-background-radius: 10; -fx-border-radius: 10; -fx-cursor: hand;";
     }
 
@@ -206,8 +206,8 @@ public class TicTacToeController {
                 btn.setText(p == Player.EMPTY ? "" : (p == Player.X ? "X" : "O"));
                 if (p != Player.EMPTY) {
                     btn.setDisable(true);
-                    btn.setStyle("-fx-background-color: " + (p == Player.X ? "#dbeafe" : "#fef3c7") +
-                            "; -fx-border-color: #ccc; -fx-border-width: 2; -fx-background-radius: 10;");
+                    btn.setStyle("-fx-background-color: " + (p == Player.X ? "#abb5c4" : "#ebe0b5") +
+                            "; -fx-border-color: #232324; -fx-border-width: 2; -fx-background-radius: 10;");
                 }
             }
         }
